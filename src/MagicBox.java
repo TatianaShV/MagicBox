@@ -1,17 +1,15 @@
 import java.util.Random;
 
 public class MagicBox<T> {
-  //  private static final int SISE = 5;
-  //  protected int SIZE;
     protected T[] items;
     protected Random random = new Random();
 
-       public  MagicBox(int SIZE) {
+    public MagicBox(int SIZE) {
         this.items = (T[]) new Object[SIZE];
-            }
+    }
 
     public boolean add(T item) {
-        for (int i = 0; i < items.length ; i++) {
+        for (int i = 0; i < items.length; i++) {
 
             if (items[i] == null) {
                 items[i] = item;
