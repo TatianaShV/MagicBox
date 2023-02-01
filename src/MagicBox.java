@@ -5,6 +5,7 @@ public class MagicBox<T> {
     protected Random random = new Random();
 
     public MagicBox(int SIZE) {
+
         this.items = (T[]) new Object[SIZE];
     }
 
